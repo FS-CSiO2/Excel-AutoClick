@@ -1,7 +1,7 @@
-rem å·¥ä½œç›®å½•åˆ‡æ¢ä¸ºå½“å‰ç›®å½•
+rem ¹¤×÷Ä¿Â¼ÇĞ»»Îªµ±Ç°Ä¿Â¼
 cd /d %~dp0
-rem ç”¨è°·æ­Œæœ€å¤§åŒ–æ‰“å¼€æŸä¸ªçª—å£
-start "chorme.exe" /max "https://www.baidu.com/"
-rem å¯åŠ¨pythonè„šæœ¬
-python .\SearchAndClick.py
-exit
+rem ÓÃ¹È¸è×î´ó»¯´ò¿ªÄ³¸ö´°¿Ú
+rem start "chorme.exe" /max "https://www.baidu.com/"
+rem Æô¶¯python½Å±¾
+python .\SearchAndClick3.py
+pause
