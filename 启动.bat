@@ -1,7 +1,8 @@
-rem ¹¤×÷Ä¿Â¼ÇĞ»»Îªµ±Ç°Ä¿Â¼
+@echo off
+rem å·¥ä½œç›®å½•åˆ‡æ¢ä¸ºå½“å‰ç›®å½•
 cd /d %~dp0
-rem ÓÃ¹È¸è×î´ó»¯´ò¿ªÄ³¸ö´°¿Ú
-rem start "chorme.exe" /max "https://www.baidu.com/"
-rem Æô¶¯python½Å±¾
-python .\SearchAndClick3.py
+rem ç”¨è°·æ­Œæœ€å¤§åŒ–æ‰“å¼€æŸä¸ªçª—å£
+rem start "chrome.exe" /max "https://www.baidu.com/"
+rem å¯åŠ¨pythonè„šæœ¬
+python .\SearchAndClick4.py
 pause
