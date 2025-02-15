@@ -161,7 +161,16 @@ def Main():
                 pyautogui.keyUp(cell_value1)
         elif cell_value == 8 : #8的时候，快速按一下一个按键
             print(f"第 {row} 行c列的内容: {cell_value}，行为：快速按一下一个按键\n b列的内容: {cell_value1}")
-            pyautogui.press(cell_value1)
+            if cell_value1 == 'mouseL':
+                pyautogui.mouseDown() # 模拟鼠标左键点击坐标
+                time.sleep(0.05)
+                pyautogui.mouseUp()
+            elif cell_value1 == 'mouseR':
+                pyautogui.mouseDown(button='right') # 模拟鼠标右键点击坐标
+                time.sleep(0.05)
+                pyautogui.mouseUp(button='right')
+            else:
+                pyautogui.press(cell_value1)
         elif cell_value == 9 : #9的时候，打开一个网页
             print(f"第 {row} 行c列的内容: {cell_value}，行为：打开一个网页\n b列的内容: {cell_value1}")
             webbrowser.open(cell_value1)
